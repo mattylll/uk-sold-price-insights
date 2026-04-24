@@ -1,0 +1,53 @@
+<!DOCTYPE html><html lang="en-GB"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Methodology — UK Sold-Price Insights</title><meta name="description" content="How the UK Sold-Price Insights Hub compiles its data — HM Land Registry Price Paid Data sources, weighting approach, property-type classification and update cadence."><link rel="canonical" href="https://uk-sold-price-insights.onrender.com/methodology"><meta property="og:type" content="website"><meta property="og:title" content="Methodology — UK Sold-Price Insights"><meta property="og:description" content="How the UK Sold-Price Insights Hub compiles its data — HM Land Registry Price Paid Data sources, weighting approach, property-type classification and update cadence."><meta property="og:url" content="https://uk-sold-price-insights.onrender.com/methodology"><meta name="twitter:card" content="summary"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","@id":"https://uk-sold-price-insights.onrender.com/#organization","name":"UK Sold-Price Insights","url":"https://uk-sold-price-insights.onrender.com"}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://uk-sold-price-insights.onrender.com/#website","url":"https://uk-sold-price-insights.onrender.com","name":"UK Sold-Price Insights","description":"UK residential sold-price data by county and town. Median prices by property type, new-build premiums, 12-month transaction volumes and year-on-year movements — compiled from HM Land Registry.","publisher":{"@id":"https://uk-sold-price-insights.onrender.com/#organization"},"inLanguage":"en-GB"}</script><link rel="stylesheet" href="/_astro/_county_.CzJMKPzN.css"></head> <body> <header class="site-header"> <div class="wrap"> <a class="wordmark" href="/"> <span class="wordmark__mark" aria-hidden="true"></span> <span> <span class="wordmark__primary">Sold-Price Insights</span> <span class="wordmark__secondary"> · UK</span> </span> </a> <nav aria-label="Primary"> <ul> <li><a href="/">National</a></li><li><a href="/counties">Counties</a></li><li><a href="/new-build-premium">New-build premium</a></li><li><a href="/methodology">Methodology</a></li> </ul> </nav> </div> </header> <main class="site-main"> <article class="wrap prose"> <h1>Methodology</h1> <p>
+The UK Sold-Price Insights Hub aggregates HM Land Registry Price Paid
+      Data (and the Scottish equivalent) into per-town medians, per-county
+      rollups and a national snapshot. Here's how the data is built and
+      what to keep in mind when reading it.
+</p> <h2>Sources</h2> <ul> <li><strong>HM Land Registry Price Paid Data (PPD)</strong> — the authoritative record of residential sales in England and Wales, published monthly. We use the full-file series and filter to the last 12 months rolling.</li> <li><strong>Registers of Scotland</strong> — for Scottish sold prices.</li> <li><strong>ONS Postcode Directory</strong> — for linking postcodes to towns and counties consistently.</li> </ul> <h2>Town classification</h2> <p>
+Transactions are assigned to a town via postcode district
+      (first half of the postcode). Where a postcode district spans
+      multiple towns, we assign based on the dominant population centre
+      within that district. Edge-case postcodes may be misclassified; let
+      us know if you spot one that's obviously wrong.
+</p> <h2>Medians, not averages</h2> <p>
+Every "median" shown is a true <em>median</em> of registered sale
+      prices — the middle value, not the arithmetic mean. UK local
+      property markets have heavy right-skew (a few high-value sales pull
+      an average upward), so medians are more informative for sizing a
+      typical scheme against recent activity.
+</p> <h2>Weighted medians</h2> <p>
+County-level and national medians are weighted by 12-month
+      transaction count — so a county's headline median reflects where the
+      activity actually was, not a simple average of town medians.
+</p> <h2>New-build flag</h2> <p>
+HM Land Registry's PPD flags new builds via a dedicated field. We
+      surface that as both a count (new vs existing per town) and as the
+      "new-build premium" — the percentage price gap between new-build and
+      existing-stock medians in the same town, for towns with at least 10
+      new-build transactions in the period.
+</p> <h2>YoY change</h2> <p>
+Year-on-year price change compares the trailing 12-month median
+      against the preceding 12-month median (i.e., months 13–24 ago). This
+      smooths out month-to-month noise.
+</p> <h2>Update cadence</h2> <p>
+Refreshed monthly after HM Land Registry publishes the latest PPD
+      release (typically by the 20th of each month).
+</p> <h2>What this isn't</h2> <p>
+These medians are context for a scheme, not a valuation. A chartered
+      surveyor's market valuation or appraisal will always outperform a
+      bulk statistical measure — particularly on comparables selection,
+      adjustments for condition and specification, and location
+      micro-variation.
+</p> <p>
+For a scheme-specific development finance conversation sizing a
+      facility against these local values, many UK developers work with
+<a href="https://www.constructioncapital.co.uk">Construction Capital</a>.
+</p> </article> </main> <footer class="site-footer"> <div class="wrap"> <nav class="site-footer__network" aria-label="Related resources"> <p class="site-footer__label">Elsewhere in the network</p> <ul> <li><a href="https://uk-property-developer-faq-790231663634.europe-west2.run.app" rel="noopener">the developer FAQ</a></li> </ul> </nav> <p>
+Data compiled from HM Land Registry Price Paid Data. Medians are
+          weighted by 12-month transaction count. Independent editorial by
+ <strong>Ben Foster</strong>,
+ uk property data analyst.
+</p> <p class="site-footer__meta">
+For sizing a scheme against these local values, many UK
+            developers work with   <a href="https://www.constructioncapital.co.uk" rel="noopener">Construction Capital</a>.
+</p> </div> </footer> </body></html>
